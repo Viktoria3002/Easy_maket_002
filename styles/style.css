@@ -1,0 +1,242 @@
+.container {
+    color: white;
+    background-color: black;
+    font-family: SEN-REGULAR;
+    
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+@font-face {
+    font-family: SEN-BOLD;
+    src: url('../assets/fonts/SEN-BOLD.TTF');
+}
+
+@font-face {
+    font-family: SEN-REGULAR;
+    src: url('../assets/fonts/SEN-REGULAR.TTF');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    all: unset;
+}
+
+h1,h2,h3,h4 {
+    margin: 0;
+}
+
+.header {
+    background: 
+    linear-gradient(to right, black 30%, #181823 30%); 
+    background-repeat: no-repeat;
+}
+
+.header__intro-image {
+    width: 750px;
+}
+
+.header__intro-img {
+    width: 100%;
+}
+
+.header__nav {
+    padding: 0px 72px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 36px;
+}
+
+.header__intro {
+    padding: 22px 40px 84px 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.header__intro-text {
+    max-width: 735px;
+    position: absolute;
+    right: 40px;
+}
+
+.header__nav-list {
+    font-size: 16px;
+    display: flex;
+}
+
+.header__nav-item,
+.header__logo {
+    padding: 32px 24px;
+}
+
+.header__nav-item--active {
+    background: #5221E6;
+    font-family: SEN-BOLD;
+}
+
+.header__title {
+    font-size: 78px;
+    margin-bottom: 32px;
+}
+
+.header__title--grey {
+    color: white;
+    opacity: 0.5;
+}
+
+.header__description {
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.main__section {
+    padding: 120px 72px;
+    background-color: black;
+}
+
+.main__section-subtitle,
+.main__section-number,
+.main__section-company-description {
+    color: #8491A0;
+    font-size: 16px;
+}
+
+.main__section-subtitle {
+    margin-bottom: 8px;
+}
+
+.main__section-title {
+    font-size: 55px;
+    max-width: 690px;
+}
+
+.main__section-companies {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__section-company {
+    max-width: 368px;
+}
+
+.main__section-text {
+    margin-bottom: 42px;
+}
+
+.main__section-number {
+    font-size: 117px;
+}
+
+.main__section-company-name {
+    font-size: 24px;
+    font-family: SEN-BOLD;
+    margin-bottom: 22px;
+}
+
+.main__section-company--green {
+    color: #3CC74E;
+    margin-right: -6px;
+}
+
+.main__section-company--blue {
+    color: #609BFF;
+    margin-right: -6px;
+}
+
+.main__section-company--pink {
+    color: #E95D90;
+    margin-right: -6px;
+}
+
+.main__philosophy {
+    background-color: #FFF3E4;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.main__philosophy-text {
+    max-width: 584px;
+    color: black;
+    padding: 120px 0 120px 72px;
+}
+
+.main__philosophy-title {
+    font-size: 55px;
+    color: #181823;
+    margin-bottom: 24px;
+}
+
+.main__philosophy-description {
+    font-size: 18px;
+    color: #5B6876;
+    margin-bottom: 134px;
+    line-height: 150%;
+}
+
+.main__philosophy-button {
+    font-size: 16px;
+    color:#181823;
+    border-bottom: 1px solid #8491A0;
+    padding-bottom: 4px;
+}
+
+.main__philosophy-image {
+    max-width: 720px;
+}
+
+.main__philosophy-img {
+    width: 100%;
+}
+
+.slider-container {
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex: 0 0 25%;
+    padding: 55px 0;
+    height: 100%;
+    border: 1px solid #181823;
+    text-align: center;
+  }
+  
+  .slider-control {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .slider-control button {
+    padding: 5px 10px;
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
