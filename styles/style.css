@@ -22,6 +22,7 @@ body {
 
 * {
     box-sizing: border-box;
+    line-height: 150%;
 }
 
 ul {
@@ -35,12 +36,17 @@ li a {
     color: white;
 }
 
-button {
+button,
+blockquote {
     all: unset;
 }
 
 h1,h2,h3,h4 {
     margin: 0;
+}
+
+h2 {
+    font-size: 55px;
 }
 
 .header {
@@ -49,7 +55,7 @@ h1,h2,h3,h4 {
     background-repeat: no-repeat;
 }
 
-.header__intro-image {
+.header__intro-img-block {
     width: 750px;
 }
 
@@ -108,103 +114,108 @@ h1,h2,h3,h4 {
     line-height: 150%;
 }
 
-.main__section {
+.main__experience {
     padding: 120px 72px;
     background-color: black;
 }
 
-.main__section-subtitle,
-.main__section-number,
-.main__section-company-description {
+.main__experience-subtitle,
+.main__experience-number,
+.main__experience-company-description,
+.main__work-subtitle {
     color: #8491A0;
     font-size: 16px;
 }
 
-.main__section-subtitle {
+.main__experience-subtitle {
     margin-bottom: 8px;
 }
 
-.main__section-title {
-    font-size: 55px;
+.main__experience-title {
     max-width: 690px;
 }
 
-.main__section-companies {
+.main__experience-companies {
     display: flex;
     justify-content: space-between;
 }
 
-.main__section-company {
+.main__experience-company {
     max-width: 368px;
 }
 
-.main__section-text {
+.main__experience-text {
     margin-bottom: 42px;
 }
 
-.main__section-number {
+.main__experience-number {
     font-size: 117px;
 }
 
-.main__section-company-name {
+.main__experience-company-name {
     font-size: 24px;
     font-family: SEN-BOLD;
     margin-bottom: 22px;
 }
 
-.main__section-company--green {
+.main__experience-company--green {
     color: #3CC74E;
     margin-right: -6px;
 }
 
-.main__section-company--blue {
+.main__experience-company--blue {
     color: #609BFF;
     margin-right: -6px;
 }
 
-.main__section-company--pink {
+.main__experience-company--pink {
     color: #E95D90;
     margin-right: -6px;
 }
 
-.main__philosophy {
+.main__info {
     background-color: #FFF3E4;
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    margin-bottom: 120px;
 }
 
-.main__philosophy-text {
+.main__info--pink {
+    background-color: #FBE4FF;
+}
+
+.main__info-text {
     max-width: 584px;
     color: black;
     padding: 120px 0 120px 72px;
 }
 
-.main__philosophy-title {
-    font-size: 55px;
+.main__info-title {
     color: #181823;
     margin-bottom: 24px;
 }
 
-.main__philosophy-description {
+.main__info-description {
     font-size: 18px;
     color: #5B6876;
-    margin-bottom: 134px;
+    margin-bottom: 117px;
     line-height: 150%;
 }
 
-.main__philosophy-button {
+.main__info-button {
     font-size: 16px;
     color:#181823;
     border-bottom: 1px solid #8491A0;
     padding-bottom: 4px;
 }
 
-.main__philosophy-image {
+.main__info-img-block {
     max-width: 720px;
+    max-height: 600px;
 }
 
-.main__philosophy-img {
+.main__info-img {
     width: 100%;
 }
 
@@ -238,5 +249,215 @@ h1,h2,h3,h4 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  .main__skillest-about,
+  .main__skillest-block {
+    max-width: 368px;
+  }
+
+  .main__skillest-texts {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 72px 120px 72px;
+  }
+
+  .main__skillest-description {
+    font-size: 18px;
+  }
+
+  .main__skillest-blocks-description {
+    font-size: 16px;
+  }
+
+  .main__skillest-description,
+  .main__skillest-blocks-description {
+    color: #8491A0
+  }
+
+  .main__skillest-blocks-title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .main__skillest-title {
+    margin-bottom: 24px;
+  }
+
+  .main__skillest-two-blocks {
+    display: flex;
+    gap: 63px;
+  }
+
+  .main__skillest--margin {
+    margin-bottom: 48px;
+  }
+
+  .main__skillest-image {
+    margin-bottom: 24px;
+  }
+
+  .main__skillest {
+    margin-bottom: 120px;
+  }
+
+  .main__work-subtitle {
+    margin-bottom: 8px;
+  }
+
+  .main__work-card-title {
+    font-size: 24px;
+    margin-bottom: 13px;
+  }
+
+  .main__work-description {
+    font-size: 18px;
+    color: #8491A0;
+  }
+
+  .main__work-img {
+    width: 100%;
+  }
+
+  .main__work-button {
+    border: 1px solid #5221E6;
+    padding: 24px 32px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main__work-card {
+    background-color: #181823;
+  }
+
+  .main__work-card:not(:nth-child(4)) {
+    margin-bottom: 24px;
+  }
+
+  .main__work-card:nth-child(2) {
+    margin-bottom: 91px;
+  }
+
+  .main__work-title {
+    margin-bottom: 80px;
+    max-width: 572px;
+  }
+
+  .main__work {
+    padding: 0 72px;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    margin-bottom: 153px;
+  }
+
+  .main__work-card-info {
+    padding: 40px 32px;
+  }
+
+  .main__dribbble {
+    padding: 0 182px;
+    margin-bottom: 240px;
+  }
+
+  .main__dribbble-img {
+    width: 100%;
+  }
+
+  .main__dribbble-circles {
+    display: flex;
+    gap: 6px;
+    padding: 12px 0 12px 16px;
+  }
+
+  .main__dribbble-circle {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #5B6876;
+  }
+
+  .main__people {
+    padding: 0 72px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .main__people-card {
+    max-width: 636px;
+  }
+
+  .main__people-card:not(:nth-child(3)) {
+    margin-bottom: 120px;
+  }
+
+  .main__people-card-text {
+    border: 1px solid #5B6876;
+    padding: 64px;
+  }
+
+  .main__dribbble-button,
+  .main__people-button {
+    font-size: 16px;
+    color: white;
+    border-bottom: 1px solid #8491A0;
+    padding-bottom: 4px;
+  }
+
+  .main__dribbble-description,
+  .main__people-description {
+    color: #8491A0;
+    margin-bottom: 40px;
+  }
+
+  .main__dribbble-notebook {
+    background-color: #181823;
+    border-radius: 10px;
+  }
+
+  .main__people-person {
+    font-size: 18px;
+    color: #5B6876;
+    font-family: SEN-BOLD;
+  }
+
+  .main__people-company {
+    font-family: SEN-REGULAR;
+  }
+  
+  .main__dribbble-text {
+    max-width: 636px;
+    margin-bottom: 120px;
+  }
+
+  .main__dribbble-title,
+  .main__people-title {
+    margin-bottom: 24px;
+  }
+
+  .main__people-text {
+    max-width: 502px;
+  }
+
+  .main__people-card-description {
+    font-size: 24px;
+    font-family: SEN-BOLD;
+    max-width: 508px;
+    margin-bottom: 64px;
+    display: block;
+  }
+
+  .main__people-owner {
+    margin-bottom: 4px;
+  }
+
+  .main__people-img-block {
+    height: 360px;
+  }
+
+  .main__people-img {
+    width: 100%;
   }
   
