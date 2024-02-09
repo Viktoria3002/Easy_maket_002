@@ -9,11 +9,14 @@
 <body>
     <div class="container">
         <header class="header">
-            <div class="header__nav">
+            <div class="header__items">
                 <div class="header__logo">
                     <img src="assets/img/logo.svg" alt="Logo">
                 </div>
-                <nav>
+                <button class="header__burger">
+                    <img src="assets/img/Burger.png" alt="Burger">
+                </button>
+                <nav class="header__navigation">
                     <ul class="header__nav-list">
                         <li class="header__nav-item"><a href="#">Experience</a></li>
                         <li class="header__nav-item"><a href="#">Work</a></li>
@@ -24,13 +27,20 @@
             </div>
             <div class="header__intro">
                 <div class="header__intro-img-block">
-                    <img class="header__intro-img" src="assets/img/intro.png" alt="Jewelry">
+                    <img class="header__intro-img" src="assets/img/Human.png" alt="Human">
+                    <img class="header__intro-img-2" src="assets/img/Human2.png" alt="Human">
                 </div>
                 <div class="header__intro-text">
                     <h1 class="header__title">
-                        I’m Robin Williams. 
-                        A Product Designer 
-                        <span class="header__title--grey">based in Italy.</span>
+                        <div>
+                            I’m Robin Williams. 
+                        </div>
+                        <div>
+                            A Product Designer
+                        </div>
+                        <div class="header__title--grey">
+                            based in Italy.
+                        </div>
                     </h1>
                     <div class="header__description">
                         I’m probably the most passionate designer you will ever get 
@@ -121,6 +131,7 @@
                 </div>
                 <div class="main__info-img-block">
                     <img class="main__info-img" src="assets/img/Circle.png" alt="Circle">
+                    <img class="main__info-img-2" src="assets/img/Circle2.png" alt="Circle">
                 </div>
             </section>
             <section class="main__skillest">
@@ -335,6 +346,7 @@
                 </div>
                 <div class="main__info-img-block">
                     <img class="main__info-img" src="assets/img/Plane.png" alt="Plane">
+                    <img class="main__info-img-2" src="assets/img/Plane2.png" alt="Plane">
                 </div>
             </section>
             <section class="main__dribbble">
@@ -362,6 +374,7 @@
                     
                     <div class="main__dribbble-img-block">
                         <img class="main__dribbble-img" src="assets/img/Dribbble.png" alt="Dribbble">
+                        <img class="main__dribbble-img-2" src="assets/img/Dribbble_2.png" alt="Dribbble">
                     </div>
                 </div>
             </section>
@@ -450,7 +463,112 @@
                     </div>
                 </div>
             </section>
+            <section class="main__photography">
+                <div class="main__photography-text">
+                    <h2 class="main__photography-title">
+                        Photography
+                    </h2>
+                    <div class="main__photography-description">
+                        Here is a collection of my best travel pictures that I took while 
+                        travelling places all around the world. 
+                    </div>
+                </div>
+                <div class="main__photography-buttons">
+                    <button class="main__photography-button main__photography-button--active">ITALY</button>
+                    <button class="main__photography-button">AUSTRALIA</button>
+                    <button class="main__photography-button">INDIA</button>
+                    <button class="main__photography-button">BRAZIL</button>
+                </div>
+                <div class="main__photography-img-block">
+                    <div class="main__photography-img">
+                        <img class="main__photography-img-item" src="assets/img/Street.png" alt="Street">
+                    </div>
+                    <div class="main__photography-img">
+                        <img class="main__photography-img-item" src="assets/img/Restaurant.png" alt="Restaurant">
+                    </div>
+                    <div class="main__photography-img">
+                        <img class="main__photography-img-item" src="assets/img/Ship.png" alt="Ship">
+                    </div>
+                    <div class="main__photography-img">
+                        <img class="main__photography-img-item" src="assets/img/Mountains.png" alt="Mountains">
+                    </div>
+                </div>
+            </section>
+            <section class="main__start">
+                <div class="main__start-text">
+                    <h2 class="main__start-title">
+                        Let’s get started
+                    </h2>
+                    <div class="main__start-description">
+                        Now that you know a lot about me, let me know if you are 
+                        interested to work with me. 
+                    </div>
+                </div>
+                <div class="main__start-wrapper">
+                    <form action="/submit" method="post">
+                        <div class="main__start-form-group">
+                          <label for="name">Name</label>
+                          <input class ="main__start-form-group-name" type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="main__start-form-group">
+                          <label for="email">Email</label>
+                          <input class ="main__start-form-group-email" type ="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="main__start-form-group">
+                          <label for="message">Message</label>
+                          <textarea class ="main__start-form-group-message" id="message" name="message" rows="4" cols="50" required></textarea>
+                        </div>
+                        
+                        <input class="main__start-button" type="submit" value="LET'S GET STARTED">
+                      </form>
+            </section>
         </main>
+        <footer class="footer">
+                <div class="footer__company-block">
+                    <div class="footer__img-Robin-logo-block">
+                        <img class="footer__img-Robin-logo" src="assets/img/logo.svg" alt="Logo">
+                    </div>
+                    <div class="footer__logos">
+                        <div class="footer__img-logo">
+                            <img src="assets/img/Twitter Logo.svg" alt="Twitter">
+                        </div>
+                        <div class="footer__img-logo">
+                            <img src="assets/img/Dribbble Logo.svg" alt="Dribbble">
+                        </div>
+                        <div class="footer__img-logo">
+                            <img src="assets/img/LinkedIn Logo.svg" alt="LinkedIn">
+                        </div>
+                    </div>
+                    
+                        
+                    <div class="footer__company-information">
+                        Not Copyright 2020 • Robin Williams. Webflow cloneable
+                    </div>
+                </div>
+                
+                <div class="footer__navigation-block">
+                    <nav>
+                        <ul class="footer__navigation-left">
+                            <li class="footer__navigation-item"><a href="#">Home</a></li>
+                            <li class="footer__navigation-item"><a href="#">About</a></li>
+                            <li class="footer__navigation-item"><a href="#">Work</a></li>
+                            <li class="footer__navigation-item footer__navigation-item-last"><a href="#">Process</a></li>
+                        </ul>                       
+                    </nav>
+                    <nav>
+                        <ul class="footer__navigation-right">
+                            <li class="footer__navigation-item"><a href="#">Store</a></li>
+                            <li class="footer__navigation-item"><a href="#">Blog</a></li>
+                            <li class="footer__navigation-item footer__navigation-item-last"><a href="#">Reading List</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__company-information-2">
+                    Not Copyright 2020 • Robin Williams. Webflow cloneable
+                </div>
+        </footer>
     </div>
 </body>
 <script src="assets/scripts/sliderEvent.js"></script>
